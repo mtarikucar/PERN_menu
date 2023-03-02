@@ -9,10 +9,10 @@
     display: none;
 }
 
-header {
+/* header {
     display        : flex;
     align-items    : center;
-    justify-content: space-between;
+    justify-content: center;
     padding        : 5px 15px;
     height         : 60px;
     width          : 100%;
@@ -101,6 +101,7 @@ header {
 }
 
 .profileContainer .imgBox {
+    
     width          : 40px;
     min-width      : 40px;
     height         : 40px;
@@ -123,7 +124,7 @@ header {
     margin-left: 8px;
     font-weight: 500;
     display    : none;
-}
+} */
 
 .toggleMenu {
     transform: rotate(90deg);
@@ -141,7 +142,7 @@ main {
     position  : relative;
     margin-top: 60px;
 }
-
+/*
 .leftMenu {
     position       : fixed;
     bottom         : 0;
@@ -247,7 +248,7 @@ main {
 
 .leftMenu ul li:nth-child(3).active~.indicator {
     transform: translateX(calc(60px * 2));
-}
+} */
 
 
 
