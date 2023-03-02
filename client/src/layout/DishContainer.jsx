@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Catagores from '../components/Catagores'
+import Categories from '../components/Categories'
 import Products from '../components/Products'
 
 function DishContainer() {
@@ -7,11 +7,9 @@ function DishContainer() {
     return (
         <div>
             <div className="dishContainer">
-                <Catagores setFilter={setFilter} />
+                <Categories setFilter={setFilter} />
                 <div className="rowContainer">
-
                 </div>
-
                 <div className="dishItemContainer">
                     <Products filter={filter} />
                 </div>

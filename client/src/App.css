@@ -370,7 +370,7 @@ main {
     align-items: center;
     overflow-x : scroll;
     overflow-y : hidden;
-    margin     : 10px 0;
+    margin     : 10px 0 0 0;
     padding    : 10px 0;
 }
 

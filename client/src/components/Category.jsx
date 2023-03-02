@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ChevronRightRounded } from "@mui/icons-material";
-function Catagory({ imgSrc, name }) {
+function Category({ imgSrc, name,setActiveCategory,activeCategory }) {
     const [active, setActive] = useState(false)
-    console.log(active);
+     const handleClick = (() => {
+        setActiveCategory(name)
+        console.log(name);
+    }) 
     return (
-        <div onClick={() => setActive(!active)} >
-            <div className={`rowMenuCard ${active && `active`}`}>
+        <div >
+            <div onClick={() => handleClick()} 
+            className={ activeCategory ===name ? 'active rowMenuCard' : 'rowMenuCard'}>
                 <div className="imgBox">
                     <img src={imgSrc} alt="" />
                 </div>
@@ -18,4 +22,4 @@ function Catagory({ imgSrc, name }) {
     )
 }
 
-export default Catagory
+export default Category

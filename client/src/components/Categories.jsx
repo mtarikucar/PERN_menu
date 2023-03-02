@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import Catagory from './Catagory'
+import Category from './Category'
 import SubCatagoy from './SubCatagoy'
 import { MenuItems, Items } from "./Data"
 
 
-function Catagores({setFilter}) {
+
+function Categories({setFilter}) {
+const [activeCategory, setActiveCategory]=useState('')
     return (
         <div className="menuCard">
             <SubCatagoy />
@@ -12,7 +14,9 @@ function Catagores({setFilter}) {
                 {MenuItems &&
                     MenuItems.map((data) => (
                         <div key={data.id} onClick={() => setFilter(data.itemId)}>
-                            <Catagory
+                            <Category
+                            setActiveCategory={setActiveCategory}
+                            activeCategory={activeCategory}
                                 imgSrc={data.imgSrc}
                                 name={data.name}
                             />
@@ -23,4 +27,4 @@ function Catagores({setFilter}) {
     )
 }
 
-export default Catagores
+export default Categories

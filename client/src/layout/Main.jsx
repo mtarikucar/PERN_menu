@@ -1,5 +1,5 @@
 import React from 'react'
-import Catagores from '../components/Catagores'
+import Categories from '../components/Categories'
 import Mainİmage from '../components/Mainİmage'
 import DishContainer from './DishContainer'
 
